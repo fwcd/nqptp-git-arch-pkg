@@ -1,5 +1,5 @@
 pkgname=nqptp-git
-pkgver=r172.f7f731b
+pkgver=1.1.r172.f7f731b
 pkgrel=1
 arch=("x86_64")
 source=(
@@ -9,7 +9,7 @@ sha1sums=("SKIP")
 
 pkgver() {
   cd "$srcdir/nqptp"
-  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+  printf "1.1.r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
 prepare() {
