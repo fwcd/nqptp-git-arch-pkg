@@ -1,0 +1,6 @@
+*.tar.zst
+*.tar.gz
+*.backup
+src/
+pkg/
+nqptp/
