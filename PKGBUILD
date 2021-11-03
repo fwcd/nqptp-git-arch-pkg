@@ -12,13 +12,9 @@ pkgver() {
   printf "1.1.r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
-prepare() {
-  cd "$srcdir/nqptp"
-  autoreconf -fi
-}
-
 build() {
   cd "$srcdir/nqptp"
+  autoreconf -fi
   ./configure --prefix=/usr
   make
 }
