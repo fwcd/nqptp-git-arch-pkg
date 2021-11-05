@@ -1,6 +1,6 @@
 pkgname=nqptp-git
 pkgver=1.1.r172.f7f731b
-pkgrel=1
+pkgrel=2
 arch=("x86_64")
 source=(
   "git+https://github.com/mikebrady/nqptp.git#branch=development"
@@ -15,7 +15,7 @@ pkgver() {
 build() {
   cd "$srcdir/nqptp"
   autoreconf -fi
-  ./configure --prefix=/usr
+  ./configure --prefix=/usr --with-systemd-startup
   make
 }
 
