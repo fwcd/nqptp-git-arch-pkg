@@ -1,6 +1,6 @@
 pkgname=nqptp-git
-pkgver=1.1.r172.f7f731b
-pkgrel=2
+pkgver=1.1.r209.512a251
+pkgrel=1
 arch=("x86_64")
 source=(
   "git+https://github.com/mikebrady/nqptp.git#branch=development"
